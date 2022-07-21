@@ -1,5 +1,26 @@
 <html><body>
     das hat sehr lange gedauert!!
     Ja ich weiss
+    <button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+
+<p id="demo">was macht das</p>
+    <canvas id="myCanvas" width="3840" height="2160" style="border:1px solid #06f60e;"></canvas>
+    <script>maincanvas = document.getElementById("myCanvas");
+    
+    context = maincanvas.getContext("2d");
+    var grd = context.createRadialGradient(1000, 500, 200, 500, 1000, 300);
+grd.addColorStop(0, "purple");
+grd.addColorStop(1, "yellow");
+grd.addColorStop(0.5, "red");
+context.fillStyle = "red";
+// Fill with gradient
+context.fillRect = (0,0,3840, 2160);
+context.fillStyle = "#06f60e";
+context.font = "30px Arial";
+context.fillText("das ist lustig", 100,50 );
+//window.alert("hello world");
+
+</script>
+
 </body> </html>
     
