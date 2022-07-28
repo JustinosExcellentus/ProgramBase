@@ -10,10 +10,10 @@
     
     context = maincanvas.getContext("2d");
     var grd = context.createRadialGradient(1000, 500, 200, 500, 1000, 300);
-grd.addColorStop(0, "purple");
+grd.addColorStop(0.3, "#06f60e");
 grd.addColorStop(1, "yellow");
 grd.addColorStop(0.5, "red");
-context.fillStyle = "red";
+context.fillStyle = grd;
 // Fill with gradient
 context.fillRect(0,0,3840, 2160);
 context.fillStyle = "#06f60e";
